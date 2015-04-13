@@ -6,7 +6,7 @@
   "scripts": {
     "prestart": "babel-node --stage 0 ./scripts/clean",
     "start": "babel-node --stage 0 ./scripts/build",
-    "test": "npm start && testem ci",
+    "test": "npm start && node ./dist/test",
     "bump": "npm start && npm publish"
   },
   "repository": {
@@ -37,7 +37,6 @@
     "object-assign": "^2.0.0",
     "rimraf": "^2.2.8",
     "tape": "^4.0.0",
-    "testem": "^0.7.1",
     "webpack": "^1.7.3"
   }
 }
