@@ -1,5 +1,7 @@
 # ImmutableDate
 
+[![Build Status](https://travis-ci.org/bloodyowl/immutable-date.svg?branch=master)](https://travis-ci.org/bloodyowl/immutable-date)
+
 > little date wrapper not to lose your mind
 
 ## install
