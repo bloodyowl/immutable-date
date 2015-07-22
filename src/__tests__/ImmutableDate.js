@@ -25,3 +25,10 @@ tape("ImmutableDate", (test) => {
   )
   test.end()
 })
+
+tape("Immutable #3, works in firefox", (test) => {
+  test.equal(
+    new ImmutableDate().setUTCFullYear(1).getUTCFullYear(),
+    1
+  )
+})
