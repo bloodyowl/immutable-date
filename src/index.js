@@ -62,7 +62,7 @@ function createMethod(key, isMutator) {
   return function patchedDateMethod(...args) {
     const clone = new Date(this._date.valueOf())
     Date.prototype[key].apply(clone, args)
-    return new ImmutableDate(clone)
+    return new ImmutableDate(clone.valueOf())
   }
 }
 
